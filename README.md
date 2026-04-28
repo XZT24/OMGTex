@@ -54,7 +54,7 @@ Coming soon...
 
 ## 📝 TODO
 - \[x\] Release the github page.
-- \[ \] Release the paper.
+- \[x\] Release the paper.
 - \[ \] Release the code and pretrained ckpt.
 
 ---
