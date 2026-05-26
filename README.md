@@ -29,7 +29,8 @@
 
 ## 🔥 News
 - **[2026-02]** Our paper was accepted by CVPR2026 ! 🥳
-- **[2026-04]** Our paper was released on Github. Arxiv version is coming soon. 
+- **[2026-04]** Our paper was released on <a href="https://arxiv.org/abs/2605.25778" target="_blank">Github</a>.
+- **[2026-05]** Our paper was available on <a href="https://arxiv.org/abs/2605.25778" target="_blank">Arxiv</a>. 
 - **[TBD]** Codes and ckpt will be released. Stay tuned.
 
 ---
