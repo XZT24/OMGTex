@@ -16,7 +16,9 @@
 </p>
 
 <div id="top" align="center">
-[![arXiv](https://img.shields.io/badge/arXiv-2512.22939-blue)](https://arxiv.org/abs/2605.25778)
+  
+[![arXiv](https://img.shields.io/badge/arXiv-2605.25778-blue)](https://arxiv.org/abs/2605.25778)
+
 </div>
 
 <div align="center">
