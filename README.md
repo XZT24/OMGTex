@@ -15,6 +15,10 @@
   </p>
 </p>
 
+<div id="top" align="center">
+[![arXiv](https://img.shields.io/badge/arXiv-2512.22939-blue)](https://arxiv.org/abs/2605.25778)
+</div>
+
 <div align="center">
   <img src="assets/teaser.png" alt="Illustration" width="96%">
 </div>
@@ -71,5 +75,16 @@ If you have questions about the paper, feel free to open an issue or contact:
 ---
 
 ## 🔗 Citation
-Coming soon...
+If you find our work helpful, please cite:
+
+```bibtex
+@misc{xiao2026omgtexonestagemultistylefacial,
+      title={OMGTex: One-stage Multi-style Facial Texture Reconstruction without Geometry Guidance}, 
+      author={Zitong Xiao and Yuda Qiu and Zisheng Ye and Xiaoguang Han},
+      year={2026},
+      eprint={2605.25778},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.25778}, 
+}
 
