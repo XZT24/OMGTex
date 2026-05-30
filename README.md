@@ -31,7 +31,7 @@
 - **[2026-02]** Our paper was accepted by CVPR2026 ! 🥳
 - **[2026-04]** Our paper was released on <a href="https://github.com/XZT24/OMGTex/blob/main/OMGTex.pdf" target="_blank">Github</a>.
 - **[2026-05]** Our paper was available on <a href="https://arxiv.org/abs/2605.25778" target="_blank">Arxiv</a>. 
-- **[TBD]** Codes and ckpt will be released. Stay tuned.
+- **[2026-05]** The preliminary codebase and checkpoints have been released. If you find our work helpful, please consider giving the repository a ⭐. Thank you for your support!
 
 ---
 
@@ -62,12 +62,88 @@ Coming soon...
 ## 📝 TODO
 - \[x\] Release the github page.
 - \[x\] Release the paper.
-- \[ \] Release the code and pretrained ckpt.
+- \[x\] Release the code and pretrained ckpt.
+
+---
+
+
+## 📢 Preliminary Release
+
+Thanks for your patience!
+
+We have released the preliminary version of the codebase and checkpoints. Please download the checkpoints from the following link:
+
+- **Checkpoint:** [Google Drive](https://drive.google.com/file/d/1CpEy75n9ZwYisvHqPdRrWaOZkMhvEkgG/view?usp=drive_link)
+
+### Important Notes
+
+This is currently a **preliminary release**. The **Gradient-Guided Texture Alignment** module has been disabled by default.
+
+During our internal evaluation, we found that the neural network used for texture keypoint detection exhibits limited generalization ability in certain cases, which may negatively affect the final reconstruction quality. We are therefore retraining this component and plan to release an improved version in the near future.
+
+To make the complete codebase available before the conference, we decided to temporarily disable this module in the current release. As a result, reconstructed textures may exhibit slight structural misalignments compared to the results reported in the paper.
+
+### Current Solutions
+
+#### Option 1: Use the Current Release Directly
+
+In most cases, the current implementation is already capable of reconstructing diverse and faithful facial textures across a wide range of styles. We recommend trying this option first before enabling additional refinement or optimization steps.
+
+#### Option 2: Enable Gradient-Guided Texture Alignment
+
+The implementation of the **Gradient-Guided Texture Alignment** module is still included in the released code.
+
+You can enable it by setting:
+
+```python
+gradient_guided_refine = True
+```
+
+in `infer.py`.
+
+After enabling the module, you may replace the texture keypoint detection model with your own trained model by placing it in the corresponding directory specified in the codebase.
+
+#### Option 3: Texture Post-Optimization
+
+As discussed in the paper, the textures reconstructed by **OMGTex** can serve as strong initialization for downstream texture optimization frameworks, leading to more photorealistic results.
+
+We recommend using the optimization pipeline provided by **AvatarTex** or **FFHQ-UV**:
+
+- **AvatarTex:** https://github.com/XZT24/AvatarTex
+- **FFHQ-UV:** https://github.com/csbhr/FFHQ-UV
+
+Please refer to the AvatarTex repository for implementation details and optimization instructions.
 
 ---
 
 ## 📚 Getting Started
-Coming soon...
+
+Please first download the checkpoints provided above.
+
+We provide two versions of pretrained models:
+
+- **Ver1**: A lightweight implementation that generally achieves better reconstruction fidelity for common facial styles.
+- **Ver2**: Offers stronger generalization capability across a wider range of artistic and stylized facial appearances.
+
+Choose the version that best fits your application scenario.
+
+## 🛠️ Environment Setup
+
+Please configure the environment according to the dependencies listed in `requirements.txt`.
+
+Our implementation uses **FLUX.1-dev** as the base diffusion model. The model will be downloaded automatically when running `infer.py` for the first time. Alternatively, you may manually download it from the following Hugging Face repository:
+
+- https://huggingface.co/black-forest-labs/FLUX.1-dev
+
+## 🚀 Reconstruction Example
+
+After completing the environment setup and downloading the required checkpoints, you can reconstruct facial textures by running:
+
+```bash
+python infer.py
+```
+
+The reconstructed texture maps will be saved to the designated output directory specified in the configuration.
 
 ---
 
