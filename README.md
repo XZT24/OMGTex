@@ -79,7 +79,7 @@ We have released the preliminary version of the codebase and checkpoints. Please
 
 This is currently a **preliminary release**. The **Gradient-Guided Texture Alignment** module has been disabled by default.
 
-During our internal evaluation, we found that the neural network used for texture keypoint detection exhibits limited generalization ability in certain cases, which may negatively affect the final reconstruction quality. We are therefore retraining this component and plan to release an improved version in the near future.
+During our internal evaluation, we found that the model used for texture keypoint detection exhibits limited generalization ability in certain cases, which may negatively affect the final reconstruction quality. We are therefore retraining this component and plan to release an improved version in the near future.
 
 To make the complete codebase available before the conference, we decided to temporarily disable this module in the current release. As a result, reconstructed textures may exhibit slight structural misalignments compared to the results reported in the paper.
 
