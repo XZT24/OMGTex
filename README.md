@@ -54,7 +54,9 @@ Our core innovation is a geometry-free pipeline that directly maps a 2D face ima
 ---
 
 ## 📖 Framework
-Coming soon...
+<div align="center">
+  <img src="assets/Poster.png" alt="Illustration" width="96%">
+</div>
 
 
 ---
